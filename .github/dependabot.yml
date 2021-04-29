@@ -1,0 +1,21 @@
+version: 2
+updates:
+- package-ecosystem: pip
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "11:00"
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: flask-migrate
+    versions:
+    - 2.6.0
+  - dependency-name: pytz
+    versions:
+    - "2020.5"
+  - dependency-name: flask-sqlalchemy
+    versions:
+    - 2.4.4
+  - dependency-name: jinja2
+    versions:
+    - 2.10.1
